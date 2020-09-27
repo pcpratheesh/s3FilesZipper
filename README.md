@@ -17,3 +17,23 @@ Move the created zip file into same or another bucket destination.
  - Set the configuration
 
  Handler function name: main
+
+
+# Configurations
+You have to provide the configuration as base64 encoded format. Either add CONFIG in lambda variable configuration or you can pass the config as parameter if the lambda trigger event is like amzon API interface.
+
+Use https://www.base64encode.org/ to encode the configurations
+
+# Config Params
+  {
+   	"region" : "Region",
+		  "bucket" : "Source Bucket",
+		  "destinationbucket" : "Destination Bucket",
+		  "filesources" : ["list of file sources"],
+    "tmpfilepath" : "temporary zip create path, provide if using VPC and EFS in lambda, default config will be /tmp",
+    "zipdestinationfilepath" : "Destination path for copy the ziped file within the destination buket"
+  }
+
+
+# Important
+- If you are trying to zip files larger than 512 MB size, then you have to setup VPC and EFS (Elastic File System) in lambda function. Lambda only allows 512MB size to create a tmp file.
