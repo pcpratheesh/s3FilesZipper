@@ -25,6 +25,7 @@ You have to provide the configuration as base64 encoded format. Either add CONFI
 Use https://www.base64encode.org/ to encode the configurations
 
 # Config Params
+
   {
    	"region" : "Region",
 	"bucket" : "Source Bucket",
