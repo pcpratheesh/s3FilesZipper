@@ -11,7 +11,7 @@ Move the created zip file into same or another bucket destination.
 
 # Deployment
  - Download the deployment file from https://github.com/pratheeshpcplpta/s3FilesZipper
- - Build the go with the following command  -  env GOOS=linux go build -o main main.go && zip deployment.zip main
+ - Build the go with the following command  -   **env GOOS=linux go build -o main main.go && zip deployment.zip main**
 
  - Upload the deployment file to lambda
  - Set the configuration
@@ -20,7 +20,7 @@ Move the created zip file into same or another bucket destination.
 
 
 # Configurations
-You have to provide the configuration as base64 encoded format. Either add CONFIG in lambda variable configuration or you can pass the config as parameter if the lambda trigger event is like amzon API interface.
+You have to provide the configuration as base64 encoded format. Either add **CONFIG** in lambda variable configuration or you can pass the **config** as parameter if the lambda trigger event is like amzon API interface.
 
 Use https://www.base64encode.org/ to encode the configurations
 
