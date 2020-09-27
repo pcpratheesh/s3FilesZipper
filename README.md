@@ -1,6 +1,6 @@
 # s3FilesZipper
-Amazon lambda function to read s3 files and create as zip
-
+Amazon lambda golang function to read s3 bucket files and create as a zip.
+Move the created zip file into same or another bucket destination.
 
 # Steps
 
