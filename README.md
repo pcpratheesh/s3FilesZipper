@@ -36,6 +36,6 @@ Use https://www.base64encode.org/ to encode the configurations
     	"zipdestinationfilepath" : "Destination path for copy the ziped file within the destination buket"
   }
 
-
+```
 # Important
 - If you are trying to zip files larger than 512 MB size, then you have to setup VPC and EFS (Elastic File System) in lambda function. Lambda only allows 512MB size to create a tmp file.
