@@ -26,7 +26,7 @@ Use https://www.base64encode.org/ to encode the configurations
 
 # Config Params
 
-```yaml
+```json
 {   	
   	"region" : "Region",
 	"bucket" : "Source Bucket",
