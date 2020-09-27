@@ -1,4 +1,4 @@
-# s3Zipper
+# s3FilesZipper
 Amazon lambda function to read s3 files and create as zip
 
 
