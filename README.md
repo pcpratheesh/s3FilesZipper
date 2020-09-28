@@ -35,10 +35,8 @@ Use https://www.base64encode.org/ to encode the configurations
 	"bucket" : "Source Bucket",
 	"destinationbucket" : "Destination Bucket",
   	"filesources" : ["list of file sources"],
-    	"tmpfilepath" : "temporary zip create path, provide if using VPC and EFS in lambda, 
-			 default config will be /tmp",
-    	"zipdestinationfilepath" : "Destination path for copy the ziped file within the 
-				    destination buket"
+    	"tmpfilepath" : "temporary zip create path, provide if using VPC and EFS in lambda,default config will be /tmp",
+    	"zipdestinationfilepath" : "Destination path for copy the ziped file within the destination buket"
   }
 
 ```
